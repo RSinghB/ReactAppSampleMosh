@@ -18,6 +18,20 @@ class Counter extends Component {
     );
   }*/
 
+  // constructor() {
+  //   super();
+  //   this.handleIncrement = this.handleIncrement.bind(this);
+  // }
+
+  handleIncrement = () => {
+    //console.log(product);
+    this.setState({ count: this.state.count + 1 }); //We can't be change count directily so we have to use setState method
+    // console.log("Incremnet Clicked", this);
+
+    // obj.method();
+    // function();
+  };
+
   render() {
     return (
       <div>
@@ -33,10 +47,6 @@ class Counter extends Component {
         </button>
       </div>
     );
-  }
-
-  handleIncrement() {
-    console.log("Incremnet Clicked");
   }
 
   getBadgeClasses() {
